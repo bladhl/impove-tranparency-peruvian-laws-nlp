@@ -10,3 +10,4 @@
 *.sig
 
 pkg/
+period_topic/

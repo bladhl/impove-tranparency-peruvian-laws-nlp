@@ -20,13 +20,18 @@ from wordcloud import WordCloud
 
 # import es_core_new_sm
 
-# lmm = spacy.load("es_core_news_sm")
-# lmm.replace_pipe("lemmatizer", "spanish_lemmatizer")
+lmm = spacy.load("es_core_news_sm")
+lmm.replace_pipe("lemmatizer", "spanish_lemmatizer")
 
 
-def read_data(path, key):
+def read_data(path, key, topic=None):
     data = pd.read_csv(path, sep=';')
-    list_row = data[key].values.tolist()
+    if topic:
+        is_topic = data['Topicos'] == topic
+        df = data[is_topic]
+        list_row = df[key].values.tolist()
+    else:
+        list_row = data[key].values.tolist()
     return list_row
 
 
@@ -68,12 +73,12 @@ def show_wordcloud(sentences, save=False, img_name=None):
         random_state=1,
         collocations=False).generate_from_frequencies(sentences)
     fig = plt.figure(1, figsize=(13, 13))
-    plt.axis('off')
-    plt.imshow(wordcloud)
+    # plt.axis('off')
+    # plt.imshow(wordcloud)
     if save:
         wordcloud.to_file(img_name + '.png')
         # plt.savefig(img_name)
-    plt.show()
+    # plt.show()
 
 
 def display_topics(model, feature_names, no_top_words):
@@ -96,20 +101,31 @@ def lemm(word):
 
 
 if __name__ == '__main__':
-    stop_words_file = open('/home/evil/Me/Nlp/final/spanish_stopwords.txt', 'r')
+    stop_words_file = open('../../stop_words/spanish_stopwords.txt', 'r')
 
     spanish_stop_words = stop_words_file.read().splitlines()
     stop_words_file.close()
 
-    rows = read_data(
-        '/home/evil/Me/Nlp/final/Congresal_Periods/Second_congress.csv',
-        'Objeto')
-    rows = remove_useless_data(rows, spanish_stop_words)
+    presidents = ["MMerino_period", "PKuczynski_period", "FSagasti_period"]
+    topics = [
+        "agricultura", "cultura", "economia", "energia minas", "justicia",
+        "mujer", "salud", "seguridad", "tecnologia", "transporte", "turismo",
+        "medio ambiente", "otros"
+    ]
 
-    tfidf_vectorizer = TfidfVectorizer()
-    # tfidf_vectorizer = CountVectorizer()
-    tfidf = tfidf_vectorizer.fit_transform(rows)
-    df = pd.DataFrame(tfidf.toarray(),
-                      columns=tfidf_vectorizer.get_feature_names())
-    freq = df.T.sum(axis=1)
-    show_wordcloud(freq, save=True, img_name='wcloud_congreso2')
+    for pres in presidents:
+        for topic in topics:
+            rows = read_data(f'../../datasets/Presidential_Periods/{pres}.csv',
+                             'Objeto', topic)
+            rows = remove_useless_data(rows, spanish_stop_words)
+            if rows:
+                tfidf_vectorizer = TfidfVectorizer()
+                # tfidf_vectorizer = CountVectorizer()
+                tfidf = tfidf_vectorizer.fit_transform(rows)
+                df = pd.DataFrame(tfidf.toarray(),
+                                  columns=tfidf_vectorizer.get_feature_names())
+                freq = df.T.sum(axis=1)
+                show_wordcloud(
+                    freq,
+                    save=True,
+                    img_name=f'../../python/images/wcloud_{pres}_{topic}')
