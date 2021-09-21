@@ -48,7 +48,7 @@ For the scrapping requires download [chromedriver](https://chromedriver.chromium
 
 ### :pushpin: Website Repository
 
-Please refer to the [website](https://github.com) .
+Please refer to the [website](https://github.com/bladhl/impove-tranparency-peruvian-laws-nlp/tree/main/web).
 
 ### :pushpin: Running from source
 
@@ -80,7 +80,7 @@ Before submitting any change, make sure to:
 -   Choque Bueno Fiorella  -  [FioChoque](https://github.com/FioChoque)
 -   Condori Ccarhuarupay Bruno Moises  -  [cbruno205](https://github.com/cbruno205)
 -   Huaman Guevara Alexander Javier  -  [Alexanderhg222](https://github.com/Alexanderhg222)
--   Huaraya Chara Vladimir  -  [bladhl](https://github.com/bladhl)
+-   Huaraya Chara Bladimir  -  [bladhl](https://github.com/bladhl)
 -   Rojas Cahuana Etson Ronaldao  -  [etson32](https://github.com/etson32)
 -   Tacusi Larota Jhon  -  [jhontacusi](https://github.com/jhontacusi)
 -   Ttito Quilca Cesar Rodrigo  -  [cesarodrigo21](https://github.com/cesarodrigo21)
