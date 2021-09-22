@@ -12,13 +12,19 @@ export const fetchData = async (path, topic) => {
 
 const drawLaws = (data, topic) => {
   const templateLaw = document.getElementById('template-law').content;
+  const templateDetail = document.getElementById('template-detail').content;
   const lawCard = document.getElementById('law-card');
   const fragment = document.createDocumentFragment();
 
   Object.entries(data).forEach(([key, element]) => {
     if (element.topico == topic) {
-      templateLaw.getElementById('law').textContent = element.objeto
-      const clone = templateLaw.cloneNode(true)
+      const clone = templateDetail.cloneNode(true)
+      console.log(clone)
+      // templateLaw.getElementById('law').textContent = element.objeto
+      clone.getElementById('text-title').textContent = element.expediente
+      clone.getElementById('text-detail').textContent = element.objeto
+      console.log(clone)
+      // const clone = templateLaw.cloneNode(true)
       fragment.appendChild(clone)
     }
   });
