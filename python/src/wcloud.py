@@ -106,7 +106,9 @@ if __name__ == '__main__':
     spanish_stop_words = stop_words_file.read().splitlines()
     stop_words_file.close()
 
-    presidents = ["MMerino_period", "PKuczynski_period", "FSagasti_period"]
+    presidents = [
+        "MMerino_period", "PKuczynski_period", "FSagasti_period", "Vizcarra"
+    ]
     topics = [
         "agricultura", "cultura", "economia", "energia minas", "justicia",
         "mujer", "salud", "seguridad", "tecnologia", "transporte", "turismo",
