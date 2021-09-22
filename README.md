@@ -44,7 +44,12 @@ In this project we classifier Peruvian laws in topic, and we show word cloud for
 -   python -m spacy download es_core_news_sm
 -   pip install sklearn
 
-For the scrapping requires download [chromedriver](https://chromedriver.chromium.org) you shoud change the path direction of chromedriver in the code. 
+For the scrapping requires download [chromedriver](https://chromedriver.chromium.org) you shoud change the path direction of chromedriver in the code.
+
+Install all requirements:
+```sh
+pip install -r requirements.txt 
+```
 
 ### :pushpin: Website Repository
 
