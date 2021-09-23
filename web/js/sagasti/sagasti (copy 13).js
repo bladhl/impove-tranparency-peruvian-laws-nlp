@@ -1,5 +1,5 @@
 import { fetchData } from '../../js/laws.js';
 
 document.addEventListener('DOMContentLoaded', e => {
-  fetchData('FSagasti_period.json', 'justicia')
+  fetchData('FSagasti_period.json', 'vivienda')
 });
