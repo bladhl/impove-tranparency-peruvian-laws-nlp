@@ -19,11 +19,11 @@ const drawLaws = (data, topic) => {
   Object.entries(data).forEach(([key, element]) => {
     if (element.topico == topic) {
       const clone = templateDetail.cloneNode(true)
-      console.log(clone)
+      // console.log(clone)
       // templateLaw.getElementById('law').textContent = element.objeto
       clone.getElementById('text-title').textContent = element.expediente
       clone.getElementById('text-detail').textContent = element.objeto
-      console.log(clone)
+      // console.log(clone)
       // const clone = templateLaw.cloneNode(true)
       fragment.appendChild(clone)
     }

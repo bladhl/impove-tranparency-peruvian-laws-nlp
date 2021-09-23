@@ -112,7 +112,7 @@ if __name__ == '__main__':
     topics = [
         "agricultura", "cultura", "economia", "energia minas", "justicia",
         "mujer", "salud", "seguridad", "tecnologia", "transporte", "turismo",
-        "medio ambiente", "otros"
+        "medio ambiente", "otros", "educacion"
     ]
 
     for pres in presidents:

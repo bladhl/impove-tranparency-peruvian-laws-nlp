@@ -7,14 +7,14 @@
 </h1>
 
 <h3 align="center">
-	Impove tranparency peruvian laws - PLN
+	Improve transparency peruvian laws - PLN
 </h3>
 
 <p align="center">
 	<strong>
 		<a href="https://pln-leyes-prueba.herokuapp.com/">Website</a>
 		•
-		<a href="https://github.com/bladhl/impove-tranparency-peruvian-laws-nlp/tree/main/datasets">Docs</a>
+		<a href="https://github.com/bladhl/improve-transparency-peruvian-laws-nlp/tree/main/datasets">Docs</a>
 	</strong>
 </p>
 
@@ -53,15 +53,15 @@ pip install -r requirements.txt
 
 ### :pushpin: Website Repository
 
-Please refer to the [website](https://github.com/bladhl/impove-tranparency-peruvian-laws-nlp/tree/main/web).
+Please refer to the [website](https://github.com/bladhl/impove-transparency-peruvian-laws-nlp/tree/main/web).
 
 ### :pushpin: Running from source
 
 The following commands install and run the development version of the project:
 
 ```sh
-git clone https://github.com/bladhl/impove-tranparency-peruvian-laws-nlp
-cd impove-tranparency-peruvian-laws-nlp/python/src/
+git clone https://github.com/bladhl/impove-transparency-peruvian-laws-nlp
+cd impove-transparency-peruvian-laws-nlp/python/src/
 ```
 An example for scrapping:
 ```sh
@@ -77,7 +77,7 @@ Simply follow the instructions to run the porject from source above, on your own
 fork.
 Before submitting any change, make sure to:
 
-- Look at the open and closed issues to see if this was not already discussed before. If you can't see any, feel free to [open a issue](https://github.com/bladhl/impove-tranparency-peruvian-laws-nlp/issues/new).
+- Look at the open and closed issues to see if this was not already discussed before. If you can't see any, feel free to [open a issue](https://github.com/bladhl/impove-transparency-peruvian-laws-nlp/issues/new).
 - If you think you discovered a vulnerability, do not open a public issue on GitHub.
 
 ## :pushpin: Authors
