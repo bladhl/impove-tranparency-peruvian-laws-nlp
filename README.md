@@ -12,7 +12,7 @@
 
 <p align="center">
 	<strong>
-		<a href="https://pln-leyes-prueba.herokuapp.com/">Website</a>
+		<a href="https://transparencia-leyes-peruanas.herokuapp.com/">Website</a>
 		•
 		<a href="https://github.com/bladhl/improve-transparency-peruvian-laws-nlp/tree/main/datasets">Docs</a>
 	</strong>
