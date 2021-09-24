@@ -20,10 +20,10 @@
 
 
 <p align="center">
-	<img src="./web/images/congreso 1.png" width="550">
+	<img src="./web/images/congre1.png" width="550">
 </p>
 <p align="center">
-	<img src="./web/images/imgdd.png" width="550">
+	<img src="./web/images/congre2.png" width="550">
 </p>
 
 # Final Project
