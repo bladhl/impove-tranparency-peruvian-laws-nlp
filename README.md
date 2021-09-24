@@ -20,9 +20,11 @@
 
 
 <p align="center">
-	<img src="https://drive.google.com/uc?id=148uuWTclQmUzzDWY8zcMgW21jLm15wyi" width="550">
+	<img src="./web/images/congreso 1.png" width="550">
 </p>
-
+<p align="center">
+	<img src="./web/images/imgdd.png" width="550">
+</p>
 # Final Project
 -   National University of San Antonio Abad in Cusco
 -   Computer and Systems Engineering -  [In.UNSAAC](http://in.unsaac.edu.pe/home/).
@@ -53,15 +55,15 @@ pip install -r requirements.txt
 
 ### :pushpin: Website Repository
 
-Please refer to the [website](https://github.com/bladhl/impove-transparency-peruvian-laws-nlp/tree/main/web).
+Please refer to the [website](https://github.com/bladhl/improve-transparency-peruvian-laws-nlp/tree/main/web).
 
 ### :pushpin: Running from source
 
 The following commands install and run the development version of the project:
 
 ```sh
-git clone https://github.com/bladhl/impove-transparency-peruvian-laws-nlp
-cd impove-transparency-peruvian-laws-nlp/python/src/
+git clone https://github.com/bladhl/improve-transparency-peruvian-laws-nlp
+cd improve-transparency-peruvian-laws-nlp/python/src/
 ```
 An example for scrapping:
 ```sh
@@ -77,7 +79,7 @@ Simply follow the instructions to run the porject from source above, on your own
 fork.
 Before submitting any change, make sure to:
 
-- Look at the open and closed issues to see if this was not already discussed before. If you can't see any, feel free to [open a issue](https://github.com/bladhl/impove-transparency-peruvian-laws-nlp/issues/new).
+- Look at the open and closed issues to see if this was not already discussed before. If you can't see any, feel free to [open a issue](https://github.com/bladhl/improve-transparency-peruvian-laws-nlp/issues/new).
 - If you think you discovered a vulnerability, do not open a public issue on GitHub.
 
 ## :pushpin: Authors
